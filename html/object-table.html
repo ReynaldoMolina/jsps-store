@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahaira Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <script type="module" src="/javascript/sidemenu.js"></script>
+    <script type="module" src="/javascript/object-table.js"></script>
+</head>
+<body class="flex">
+    <!--Invisible div to close menu on click-->
+    <div class="div-menu-close"></div>
+    <side-menu></side-menu>
+
+    <!--Main section-->
+    <main class="flex flx-col main-section">
+
+        <store-header></store-header>
+
+        <!--Main content-->
+        <h2 id="page-title"></h2>
+        
+        <div class="flex flx-center action-buttons">
+            <search class="flex flx-center search">
+                <input type="search" id="search-bar" class="frm-input frm-input-icon" placeholder="Buscar">
+            </search>
+            <a id="new-register" class="flex flx-center action-btn">
+                <img src="/assets/icons/action-new.png" alt="Nuevo">
+            </a>
+            <button class="flex flx-center action-btn">
+                <img src="/assets/icons/action-filter.png" alt="Filtrar">
+            </button>
+        </div>
+        
+        <section class="main-content">
+            <table class="table">
+                <tbody class="tbl-rows"></tbody>
+            </table>
+        </section>
+    
+    </main>
+</body>
+</html>
